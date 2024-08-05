@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica</title>
+
+    <h1>Unidad 5 - Lógica</h1>
+    <h3>Operadores Lógicos</h3>
+    <div id="container">
+        
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    debugger;
+
+    let p = true;
+    let q = false;
+
+    //Negación
+    debugger;
+    mostrarEnPantalla("Negación - !")
+    
+    mostrarEnPantalla(p);
+    mostrarEnPantalla(!p);
+
+    //Conjunción
+    debugger;
+    mostrarEnPantalla("--------------")
+    mostrarEnPantalla("Conjunción - &&")    
+    mostrarEnPantalla(true && true);
+    mostrarEnPantalla(true && false);
+    mostrarEnPantalla(false && true);
+    mostrarEnPantalla(false && false);
+    debugger;
+    mostrarEnPantalla("Ejemplo p q:");
+    mostrarEnPantalla(p && q);
+
+    //Disyuncion
+    debugger;
+    mostrarEnPantalla("--------------")
+    mostrarEnPantalla("Disyuncion - ||")    
+    mostrarEnPantalla(true || true);
+    mostrarEnPantalla(true || false);
+    mostrarEnPantalla(false || true);
+    mostrarEnPantalla(false || false);
+    debugger;
+    mostrarEnPantalla("Ejemplo p q:");
+    mostrarEnPantalla(p || q);
+
+    //Implicación
+    debugger;
+    mostrarEnPantalla("--------------")
+    mostrarEnPantalla("Implicación con equivalencia lógica")    
+    mostrarEnPantalla(!true || true);
+    mostrarEnPantalla(!true || false);
+    mostrarEnPantalla(!false || true);
+    mostrarEnPantalla(!false || false);
+    debugger;
+    mostrarEnPantalla("Ejemplo p q:");
+    mostrarEnPantalla(p || q);
+
+    //Doble Implicación
+    debugger;
+    mostrarEnPantalla("--------------")
+    mostrarEnPantalla("Doble Implicación - ===")    
+    mostrarEnPantalla(true === true);
+    mostrarEnPantalla(true === false);
+    mostrarEnPantalla(false === true);
+    mostrarEnPantalla(false === false);
+    debugger;
+    mostrarEnPantalla("Ejemplo p q:");
+    mostrarEnPantalla(p === q);
+
+    //Disyunción Exclusiva
+    debugger;
+    mostrarEnPantalla("--------------")
+    mostrarEnPantalla("Disyunción Exclusiva - !==")    
+    mostrarEnPantalla(true !== true);
+    mostrarEnPantalla(true !== false);
+    mostrarEnPantalla(false !== true);
+    mostrarEnPantalla(false !== false);
+    debugger;
+    mostrarEnPantalla("Ejemplo p q:");
+    mostrarEnPantalla(p !== q);
+
+
+    function mostrarEnPantalla(valor) {
+        let text = document.createElement('p');
+        text.textContent = valor;
+        document.getElementById("container").appendChild(text);
+    }
+
+</script>
